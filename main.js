@@ -1,5 +1,5 @@
-const playerOne = '❌'
-const playerTwo = '⭕️'
+const playerOne = '👻'
+const playerTwo = '👽‍'
 const players = [playerOne, playerTwo]
 let previousPlayer
 let firstPlayer
@@ -12,6 +12,8 @@ const board = document.querySelector('.board')
 const rows = document.createElement('div')
 board.prepend(rows)
 
+const player = document.querySelector('.player')
+player.textContent = `Spelare ett: ${playerOne}, Spelare två: ${playerTwo}`
 //select random first player to start
 function randomPlayer(players) {
   return players[Math.floor(Math.random() * players.length)]
@@ -51,7 +53,7 @@ button[i].addEventListener('click', function(event){
   }
   //to only count one click/per button
     button[i].classList.add('clicked')
-    antalSlag.textContent = `Antal slag: ${++slag}`
+    antalSlag.textContent = `Antal drag: ${++slag}`
   }
 })
 }
