@@ -14,7 +14,7 @@ board.prepend(rows)
 
 const player = document.querySelector('.player')
 player.textContent = `Spelare ett: ${playerOne}, Spelare två: ${playerTwo}`
-//select random first player to start
+//select random player to start
 function randomPlayer(players) {
   return players[Math.floor(Math.random() * players.length)]
 }
